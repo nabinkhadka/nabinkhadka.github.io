@@ -24,6 +24,18 @@ span{
   cursor: pointer;
 }
 
+#optional-input{
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-color: inherit;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 0.1em;
+  cursor: none;
+}
+
 #output-area{
   font-size: 0.88em;
 }

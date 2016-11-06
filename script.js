@@ -1,11 +1,49 @@
 var inputCommand = document.getElementById('input-command');
 var outputArea = document.getElementById('output-area');
+var optionalCommand = document.getElementById('optional-input');
+
+var commands = {
+        'help': doHelp,
+        'projects': showProjects,
+        'contact': giveContactDetails,
+        'experiences': listExperiences,
+        'clear': clearOrReset,
+        'reset': clearOrReset,
+        'version': version,
+        'socials': getSocialLinks,
+        'blogs': blogs,
+        'education': getEducations,
+        'default': showSyntaxErrorMsg
+    };
+
 
 inputCommand.focus();
 
+setInterval(function(){
+  if (optionalCommand == document.activeElement){
+    inputCommand.focus();
+    var part = inputCommand.value;
+
+    var resultArray = [];
+
+    for (var command in commands){
+      if(command.startsWith(part)){
+        resultArray.push(command);
+      }
+    }
+
+    if(resultArray.length == 1){
+      inputCommand.value = resultArray[0];
+    }else if (resultArray.length > 1){
+      outputArea.innerHTML = "<span>nabin@Khadka:~$</span> " + inputCommand.value 
+      + "<br><br>" + resultArray.join('\t\t') + "<br><br>";
+    }
+  }
+}, 300);
+
+
 function sendCommand(e) {
     if (e.keyCode == 13) {
-
         var currentCommand = inputCommand.value;
         var returnedFunction = processCommand(currentCommand);
         returnedFunction();
@@ -13,28 +51,12 @@ function sendCommand(e) {
     }
 }
 
+
 function clearInput() {
     inputCommand.value = "";
 }
 
 function processCommand(command) {
-
-    var commands = {
-        'help': doHelp,
-        'projects': showProjects,
-        'contact': giveContactDetails,
-        'experience': listExperiences,
-        'clear': clearOrReset,
-        'reset': clearOrReset,
-        'version': version,
-        'socials': getSocialLinks,
-        'blogs': blogs,
-        'education': getEducations,
-        'desktop': goToDesktop,
-        'exit': goToDesktop,
-        'close': goToDesktop,
-        'default': showSyntaxErrorMsg
-    };
 
     if (commands[command]) {
         return commands[command];
@@ -45,12 +67,8 @@ function processCommand(command) {
 }
 
 
-function goToDesktop(){
-  window.location = "desktop/index.html";
-}
-
-
 function getEducations(){
+
   var education = "<span>nabin@Khadka:~$</span> education" + `
       <br><br>
       <ul>
@@ -100,6 +118,7 @@ function showProjects() {
 }
 
 function giveContactDetails() {
+
     var contactDetails = 
     ` <br>
       <br>
@@ -114,15 +133,18 @@ function giveContactDetails() {
 }
 
 function blogs(){
+
   var blogs = "<span>nabin@Khadka:~$</span> blogs" + `
     <ul>
       <li><a href="http://hubpages.com/technology/tictactoe" target="_blank">Developing TicTacToe from scratch in Android</a></li>
     </ul>
     `
     outputArea.innerHTML = blogs;
+
 }
 
 function getSocialLinks(){
+
   var socialLinks = `
   <ul>
     <li><a href="http://stackoverflow.com/users/2770850/nabin-khadka" target="_blank">Stackoverflow</a></li>
@@ -135,9 +157,11 @@ function getSocialLinks(){
   ;
 
   outputArea.innerHTML = "<span>nabin@Khadka:~$</span> socials" + socialLinks;
+
 }
 
 function listExperiences() {
+
     var experiences = `
       <br>
       <br>Internship:<br>
@@ -152,17 +176,23 @@ function listExperiences() {
       </ul>
     `;
 
-    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> experience" + experiences;
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> experiences" + experiences;
+
 }
 
 function showSyntaxErrorMsg() {
+
     var errorMessage = '<br><br> --bad command. Command not found.<br><br>Did you mean any of the following commands?<br>'
                          + getCommandLists() + getThankYouMsg();
     outputArea.innerHTML = "<span>nabin@Khadka:~$</span> " + inputCommand.value + errorMessage;
+
 }
 
 function version() {
-    outputArea.innerHTML = '0.1 <br>Current update on: 6th Nov. 2016.<br> 6th Nov. 2016.';
+
+    var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.1 <br>Current update on: 6th Nov. 2016.<br> 6th Nov. 2016.<br><br>';
+    outputArea.innerHTML = version;
+
 }
 
 function clearOrReset() {
@@ -177,7 +207,7 @@ function getCommandLists() {
               <li>clear</li>
               <li>desktop</li>
               <li>education</li>
-              <li>experience</li>
+              <li>experiences</li>
               <li>help</li>
               <li>projects</li>
               <li>socials</li>
