@@ -18,6 +18,7 @@ function clearInput() {
 }
 
 function processCommand(command) {
+
     var commands = {
         'help': doHelp,
         'projects': showProjects,
@@ -40,12 +41,18 @@ function processCommand(command) {
 }
 
 function doHelp() {
-    outputArea.innerHTML = '<br>Welcome to my website. If you do not want to use the terminal, you can type "desktop" to go to website directly. But if you want to try out this simple shell, please see the following commands.<br> ' + getCommandLists() + getThankYouMsg();
+
+    var help = `
+      <br><br>Welcome to my website. If you do not want to use the terminal, you can type "desktop" to go to website directly. 
+      But if you want to try out this simple shell, please see the following commands.<br> 
+    `;
+
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> help" + help + getCommandLists() + getThankYouMsg() + '<br><br>';
 }
 
 function showProjects() {
 
-    var projectLists = `<br>Android:<br>
+    var projectLists = `<br><br>Android:<br>
     <ul>
       <li><a href="https://play.google.com/store/apps/details?id=np.com.picl.anjalacorab" target="_blank">ACORAB CIN</a><li>
       <li><a href="https://play.google.com/store/apps/details?id=com.premier.mtcl1" target="_blank">Premier Insurance Co. Ltd. Nepal.</a><li>
@@ -64,19 +71,31 @@ function showProjects() {
 
     ;
 
-    outputArea.innerHTML = projectLists;
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> projects" + projectLists;
+
 }
 
 function giveContactDetails() {
-    debug('contact typed');//Add cv also here
+    var contactDetails = 
+    ` <br>
+      <br>
+      Email: nbnkhadka14@gmail.com<br>
+      Skype: nbnkhadka14
+      <br>
+      <br>For social links use "socials" command.
+      <br><br>
+    `;
+
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> contact" + contactDetails;
 }
 
 function blogs(){
-  outputArea.innerHTML = `
-  <ul>
-    <li><a href="http://hubpages.com/technology/tictactoe" target="_blank">Developing TicTacToe from scratch in Android</a></li>
-  </ul>
-  `;
+  var blogs = "<span>nabin@Khadka:~$</span> blogs" + `
+    <ul>
+      <li><a href="http://hubpages.com/technology/tictactoe" target="_blank">Developing TicTacToe from scratch in Android</a></li>
+    </ul>
+    `
+    outputArea.innerHTML = blogs;
 }
 
 function getSocialLinks(){
@@ -91,11 +110,12 @@ function getSocialLinks(){
   </ul>`
   ;
 
-  outputArea.innerHTML = socialLinks;
+  outputArea.innerHTML = "<span>nabin@Khadka:~$</span> socials" + socialLinks;
 }
 
 function listExperiences() {
     var experiences = `
+      <br>
       <br>Internship:<br>
       <ul>
         <li>Young Innovations Pvt. Ltd. Lalitpur, Nepal (3 months)</li>
@@ -108,7 +128,7 @@ function listExperiences() {
       </ul>
     `;
 
-    outputArea.innerHTML = experiences;
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> experience" + experiences;
 }
 
 function showSyntaxErrorMsg() {
@@ -124,6 +144,7 @@ function clearOrReset() {
 }
 
 function getCommandLists() {
+
     return `<ul>
               <li>blogs</li>
               <li>contact</li>
