@@ -29,6 +29,10 @@ function processCommand(command) {
         'version': version,
         'socials': getSocialLinks,
         'blogs': blogs,
+        'education': getEducations,
+        'desktop': goToDesktop,
+        'exit': goToDesktop,
+        'close': goToDesktop,
         'default': showSyntaxErrorMsg
     };
 
@@ -38,6 +42,26 @@ function processCommand(command) {
         return commands['default'];
     }
 
+}
+
+
+function goToDesktop(){
+  window.location = "desktop";
+}
+
+
+function getEducations(){
+  var education = "<span>nabin@Khadka:~$</span> education" + `
+      <br><br>
+      <ul>
+        <li>Bachelors of Computer Engineering, Kathmandu Engineering College ( 74 % )</li>
+        <li>10 + 2 (Science, HSEB, 78 % )</li>
+        <li>SLC, Mount View English Boarding School, Dang ( 86 % )</li>
+      </ul>
+      <br><br>
+  `;
+
+  outputArea.innerHTML = education;
 }
 
 function doHelp() {
@@ -153,7 +177,6 @@ function getCommandLists() {
               <li>clear</li>
               <li>desktop</li>
               <li>education</li>
-              <li>exit</li>
               <li>experience</li>
               <li>help</li>
               <li>projects</li>
@@ -162,7 +185,7 @@ function getCommandLists() {
 }
 
 function getThankYouMsg() {
-    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.<br><br>'
+    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.'
 }
 
 function debug(message) {
