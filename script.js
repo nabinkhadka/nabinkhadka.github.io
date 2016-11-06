@@ -46,7 +46,7 @@ function processCommand(command) {
 
 
 function goToDesktop(){
-  window.location = "desktop";
+  window.location = "desktop/index.html";
 }
 
 
