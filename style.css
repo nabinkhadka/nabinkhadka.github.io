@@ -1,41 +1,42 @@
-/*html, body {
-  font-family: 'Roboto', sans-serif;
-  font-size:14px;
-  height:100%;
-  margin: 0px;
-  padding: 0px;
+body{
+  background-color: #333333;
+  color: #dfdfdf;
+  margin: 0;
+  padding: 5%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
-/** Enabled Step 3... */
 
-/*md-toolbar h3 {
-  margin: auto;
-  font-weight: 500;
+span{
+  font-size: 1em;
 }
 
-md-list-item > button {
-  width:100%;
-  text-align:left !important;
+#input-command{
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: inherit;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 0.97em;
+  cursor: pointer;
 }
 
-#content  {
-  padding-left: 40px;
-  padding-right: 40px;
+#output-area{
+  font-size: 0.88em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
   padding-top: 5px;
 }
 
-.avatar {
-  position: relative;
-  width: 128px;
-  height: 128px;
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0px;
-  vertical-align: middle;
-  zoom:0.70;
-  transform: translateZ(0);
-  -webkit-transform: scale(0.70);
-  -moz-transform:scale(0.70);
-}*/*/
+a{
+  text-decoration: none;
+  color: white;
+}

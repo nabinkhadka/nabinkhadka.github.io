@@ -1,45 +1,16 @@
 <html>
   <head>
-      <link rel="stylesheet" href="https://gitcdn.xyz/repo/angular/bower-material/master/angular-material.css">
-      <link rel="stylesheet" href="aapp.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <meta http-equiv="refresh" content="1"> -->
   </head>
+  <body>
 
-  <body ng-app="starterApp" layout="column">
-
-    <!-- Container #1 (see wireframe) -->
-    <md-toolbar layout="row" >
-      <h1>Angular Material - Starter App</h1>
-    </md-toolbar>
-
-    <!-- Container #2 -->
-    <div flex layout="row">
-
-        <!-- Container #3 -->
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-z2">SideNav</md-sidenav>
-
-        <!-- Container #4 -->
-        <md-content flex id="content">Content</md-content>
-
-    </div>
-
-
-    <!-- Angular Material Dependencies -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.js"></script>
-
-    <!-- Angular Material Javascript using GitCDN to load directly from `bower-material/master` -->
-    <script src="https://gitcdn.xyz/repo/angular/bower-material/master/angular-material.js"></script>
+    <span>nabin@Khadka:~$</span>
+    <input id ="input-command" type="text" name="input-command" onkeypress="sendCommand(event)">
+    <div id="output-area"></div>
 
 
 
-    <script type="text/javascript">
-      angular
-          .module('starterApp', ['ngMaterial'])
-          .run(function($log){
-            $log.debug("starterApp + ngMaterial running...");
-          });
-    </script>
-
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
