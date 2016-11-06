@@ -132,7 +132,9 @@ function listExperiences() {
 }
 
 function showSyntaxErrorMsg() {
-    outputArea.innerHTML = '<br> -bad command. Command not found.<br><br>Did you mean any of the following commands?<br>' + getCommandLists() + getThankYouMsg();
+    var errorMessage = '<br><br> --bad command. Command not found.<br><br>Did you mean any of the following commands?<br>'
+                         + getCommandLists() + getThankYouMsg();
+    outputArea.innerHTML = "<span>nabin@Khadka:~$</span> " + inputCommand.value + errorMessage;
 }
 
 function version() {
@@ -160,7 +162,7 @@ function getCommandLists() {
 }
 
 function getThankYouMsg() {
-    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.'
+    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.<br><br>'
 }
 
 function debug(message) {
