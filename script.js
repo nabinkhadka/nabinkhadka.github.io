@@ -16,9 +16,6 @@ var commands = {
         'default': showSyntaxErrorMsg
     };
 
-
-inputCommand.focus();
-
 setInterval(function(){
   if (optionalCommand == document.activeElement){
     inputCommand.focus();
@@ -38,6 +35,8 @@ setInterval(function(){
       outputArea.innerHTML = "<span>nabin@Khadka:~$</span> " + inputCommand.value 
       + "<br><br>" + resultArray.join('\t\t') + "<br><br>";
     }
+  }else if(inputCommand != document.activeElement){
+      inputCommand.focus();
   }
 }, 300);
 
