@@ -214,7 +214,7 @@ function getCommandLists() {
 }
 
 function getThankYouMsg() {
-    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.'
+    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.<br><br>'
 }
 
 function debug(message) {
