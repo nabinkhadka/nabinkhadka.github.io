@@ -210,6 +210,7 @@ function getCommandLists() {
               <li>help</li>
               <li>projects</li>
               <li>socials</li>
+              <li>version</li>
             </ul>`;
 }
 
