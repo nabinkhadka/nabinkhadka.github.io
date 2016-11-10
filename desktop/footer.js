@@ -8,37 +8,22 @@ Ext.define('Personal.website.Footer',{
         border: false,
         items:  [{
             xtype: 'button',
-            glyph: 'xf015@FontAwesome',
-            text: 'Large',
-            scale: 'large'
-        },{
-            xtype: 'button',
-            glyph: 'xf0e0@FontAwesome',
-            text: 'Large',
-            scale: 'large'
+            glyph: 'xf230@FontAwesome'
           },{
             xtype: 'button',
-            glyph: 'xf19d@FontAwesome',
-            text: 'Large',
-            scale: 'large'
+            glyph: 'xf0e0@FontAwesome'
           },{
             xtype: 'button',
-            glyph: 'xf16c@FontAwesome',
-            text: 'Large',
-            scale: 'large'
+            glyph: 'xf099@FontAwesome'
           },{
             xtype: 'button',
-            glyph: 'xf08c@FontAwesome',
-            text: 'Large',
-            scale: 'large'
+            glyph: 'xf16c@FontAwesome'
           },{
             xtype: 'button',
-            glyph: 'xf17e@FontAwesome',
-            text: 'Large',
-            scale: 'large'
+            glyph: 'xf08c@FontAwesome'
           },{
-            html: 'Hello content',
-            border: false
+            xtype: 'button',
+            glyph: 'xf17e@FontAwesome'
           }]
 
       });

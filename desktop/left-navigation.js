@@ -7,13 +7,14 @@ Ext.define('Personal.website.LeftNavigation',{
         padding: 10,
         items:  [{
             xtype: 'button',
-            glyph: 'xf015@FontAwesome',
-            text: 'Large',
+            glyph: 'xf17b@FontAwesome',
+            text: 'ACORAB CIN',
+            align: 'left',
             scale: 'large'
         },{
             xtype: 'button',
-            glyph: 'xf0e0@FontAwesome',
-            text: 'Large',
+            glyph: 'xf0f9@FontAwesome',
+            text: 'Premier Insurance Nepal',
             scale: 'large'
           },{
             xtype: 'button',

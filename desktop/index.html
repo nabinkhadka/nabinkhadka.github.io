@@ -16,6 +16,7 @@
       <script type="text/javascript" src="left-navigation.js"></script>
       <script type="text/javascript" src="footer.js"></script>
       <script type="text/javascript" src="right-accordion.js"></script>
+      <script type="text/javascript" src="center-section.js"></script>
       <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script> -->
       <script type="text/javascript">
 
@@ -35,19 +36,17 @@
             }, {
                 region: 'west',
                 collapsible: true,
-                title: 'Navigation',
-                width: 150,
+                title: 'Projects',
+                width: 250,
                 items: [
                   leftNavigation
                 ]
             }, {
                 region: 'south',
-                title: 'South Panel',
+                title: '...Be in touch...',
+                glyph: 'xf256@FontAwesome',
                 collapsible: true,
-                html: 'Information goes here',
                 split: true,
-                height: 100,
-                minHeight: 100,
                 items: [
                   footer
                 ]
@@ -65,16 +64,17 @@
                 region: 'center',
                 xtype: 'tabpanel', // TabPanel itself has no title
                  // First tab active by default
-                items: [{
-                    title: 'Default Tab',
-                    html: 'The first tab\'s content. Others may be added dynamically'
-                },{
-                    title: 'Default Tab',
-                    html: 'The first tab\'s content. Others may be added dynamically'
-                },{
-                    title: 'Default Tab',
-                    html: 'The first tab\'s content. Others may be added dynamically'
-                }
+                items: [
+                    {
+                      title: 'Default Tab',
+                      html: 'The first tab\'s contesdfsdnt. Others may be added dynamically'
+                    },{
+                      title: 'Default Tab',
+                      html: 'The first tab\'s content. Others may be added dynamically'
+                    },{
+                      title: 'Default Tab',
+                      html: 'The first tab\'s content. Others may be added dynamically'
+                    }
                 ]
             }]
         });
