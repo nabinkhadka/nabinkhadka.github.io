@@ -15,26 +15,23 @@
       <script type="text/javascript" src="ext-all.js"></script>
       <script type="text/javascript" src="left-navigation.js"></script>
       <script type="text/javascript" src="footer.js"></script>
+      <script type="text/javascript" src="right-accordion.js"></script>
       <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script> -->
       <script type="text/javascript">
 
         var leftNavigation = Ext.create('Personal.website.LeftNavigation', {});
+        var rightAccordion = Ext.create('Personal.website.Accordion',{});
         var footer = Ext.create('Personal.website.Footer', {});
 
          Ext.create('Ext.container.Viewport', {
             layout: 'border',
             items: [{
                 region: 'north',
-                // html: '<h1 class="x-panel-header">Page Title</h1>',
+                // title: 'I am learning ExtJs',
+                html: '<h1 class="x-panel-header">....Nabin Khadka (Under construction)....</h1>',
+                glyph: 'xf007@FontAwesome',
                 border: false,
                 margin: '0 0 5 0',
-                items: [
-                  {
-                    xtype: 'displayfield',
-                    fieldLabel: 'Display Field',
-                    glyph: 'xf015@FontAwesome'
-                  }
-                ]
             }, {
                 region: 'west',
                 collapsible: true,
@@ -56,27 +53,14 @@
                 ]
             }, {
                 region: 'east',
-                title: 'East Panel',
+                title: '....Academics and Experiences....',
+                glyph: 'xf19d@FontAwesome',
                 collapsible: true,
                 split: true,
-                width: 150,
-                layout : 'accordion' ,
-                items : [{
-                   title : 'Panel 1',
-                   html : 'Panel 1 html content'
-                },{
-                   title : 'Panel 2',
-                   html : 'Panel 2 html content'
-                },{
-                   title : 'Panel 3',
-                   html : 'Panel 3 html content'
-                },{
-                   title : 'Panel 4',
-                   html : 'Panel 4 html content'
-                },{
-                   title : 'Panel 5',
-                   html : 'Panel 5 html content'
-                }]
+                width: 350,
+                items: [
+                  rightAccordion
+                ]
             }, {
                 region: 'center',
                 xtype: 'tabpanel', // TabPanel itself has no title
