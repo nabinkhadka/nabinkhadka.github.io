@@ -13,6 +13,7 @@ var commands = {
         'socials': getSocialLinks,
         'blogs': blogs,
         'education': getEducations,
+        'desktop': viewDesktopVersion,
         'default': showSyntaxErrorMsg
     };
 
@@ -40,6 +41,10 @@ setInterval(function(){
   }
 }, 300);
 
+
+function viewDesktopVersion(){
+  window.open('desktop/', '_blank');
+}
 
 function sendCommand(e) {
     if (e.keyCode == 13) {
