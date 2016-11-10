@@ -1,10 +1,11 @@
-Ext.define('Personal.website.LeftNavigation',{
+Ext.define('Personal.website.Footer',{
         extend: 'Ext.panel.Panel',
         layout : {
-               type :'vbox',
+               type :'hbox',
                align: 'stretch'               
             },
         padding: 10,
+        border: false,
         items:  [{
             xtype: 'button',
             glyph: 'xf015@FontAwesome',
@@ -35,6 +36,9 @@ Ext.define('Personal.website.LeftNavigation',{
             glyph: 'xf17e@FontAwesome',
             text: 'Large',
             scale: 'large'
+          },{
+            html: 'Hello content',
+            border: false
           }]
 
       });
