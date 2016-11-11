@@ -1,0 +1,54 @@
+body{
+  background-color: #333333;
+  color: #dfdfdf;
+  margin: 0;
+  padding: 5%;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+
+span{
+  font-size: 1em;
+}
+
+#input-command{
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: inherit;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 0.97em;
+  cursor: pointer;
+}
+
+#optional-input{
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+  background-color: inherit;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 0.1em;
+  cursor: none;
+}
+
+#output-area{
+  font-size: 0.88em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  padding-top: 5px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
