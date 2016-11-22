@@ -8,33 +8,33 @@ Ext.define('Personal.website.LeftNavigation',{
         items:  [{
             xtype: 'button',
             glyph: 'xf17b@FontAwesome',
-            text: 'ACORAB CIN',
+            text: 'Project 1',
             align: 'left',
             scale: 'large'
         },{
             xtype: 'button',
-            glyph: 'xf0f9@FontAwesome',
-            text: 'Premier Insurance Nepal',
+            glyph: 'xf17b@FontAwesome',
+            text: 'Project 2',
             scale: 'large'
           },{
             xtype: 'button',
-            glyph: 'xf19d@FontAwesome',
-            text: 'Large',
+            glyph: 'xf17b@FontAwesome',
+            text: 'Project 3',
             scale: 'large'
           },{
             xtype: 'button',
-            glyph: 'xf16c@FontAwesome',
-            text: 'Large',
+            glyph: 'xf17b@FontAwesome',
+            text: 'Project 4',
             scale: 'large'
           },{
             xtype: 'button',
-            glyph: 'xf08c@FontAwesome',
-            text: 'Large',
+            glyph: 'xf17b@FontAwesome',
+            text: 'Project 5',
             scale: 'large'
           },{
             xtype: 'button',
-            glyph: 'xf17e@FontAwesome',
-            text: 'Large',
+            glyph: 'xf17b@FontAwesome',
+            text: 'Project 6',
             scale: 'large'
           }]
 
