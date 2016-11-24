@@ -1,6 +1,4 @@
-# nabinkhadka.github.io
-
-My website which I tried to make it work like Unix terminal.
+## nabinkhadka.github.io
 
 Please go and have a look at that https://nabinkhadka.github.io/ . 
 
