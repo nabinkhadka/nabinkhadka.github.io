@@ -110,7 +110,7 @@ function showProjects() {
     `<br>Python:<br>
     <ul>
       <li><a href="http://www.allalign.com/" target="_blank">Flask web app</a><li>
-      <li><a href="https://github.com/nabinkhadka" target="_blank">Find other project on github</a><li>
+      <li><a href="https://github.com/nabinkhadka" target="_blank">Find other projects on github</a><li>
     </ul>`
 
     ;
