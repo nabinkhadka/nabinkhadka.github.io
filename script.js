@@ -103,15 +103,14 @@ function showProjects() {
       <li><a href="https://play.google.com/store/apps/details?id=com.premier.mtcl1" target="_blank">Premier Insurance Co. Ltd. Nepal.</a><li>
       <li><a href="https://www.youtube.com/watch?v=YeJJPoHBoHA" target="_blank">Personal Notes Keeping App</a><li>
       <li><a href="https://www.youtube.com/watch?v=M2LvmD4Syrs&feature=youtu.be" target="_blank">Company App</a><li>
-      <li><a href="http://themomotrail.orgfree.com/apis/admin/" target="_blank">College Project</a><li>
     </ul>`
 
     +
 
     `<br>Python:<br>
     <ul>
-      <li>News crawler as intern using Scrapy and Django.</li>
-      <li>Learning flask at Logpoint Nepal.</li>
+      <li><a href="http://www.allalign.com/" target="_blank">Flask web app</a><li>
+      <li><a href="https://github.com/nabinkhadka" target="_blank">Find other project on github</a><li>
     </ul>`
 
     ;
@@ -157,9 +156,8 @@ function getSocialLinks(){
     <li><a href="http://stackoverflow.com/users/2770850/nabin-khadka" target="_blank">Stackoverflow</a></li>
     <li><a href="https://www.linkedin.com/in/nabin-khadka-76946689" target="_blank">LinkedIn</a></li>
     <li><a href="http://hubpages.com/@nabinkhadka" target="_blank">Blogs</a></li>
-    <li><a href="https://twitter.com/nbn47095" target="_blank">Twitter</a></li>
+    <li><a href="https://twitter.com/nbnkhadka" target="_blank">Twitter</a></li>
     <li><a href="https://github.com/nabinkhadka" target="_blank">Github</a></li>
-    <li><a href="https://www.facebook.com/nbnkhadka14" target="_blank">Facebook</a></li>
   </ul>`
   ;
 
