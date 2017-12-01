@@ -61,7 +61,6 @@ function clearInput() {
 }
 
 function processCommand(command) {
-
     if (commands[command]) {
         return commands[command];
     } else {
@@ -141,6 +140,10 @@ function blogs(){
   var blogs = "<span>nabin@Khadka:~$</span> blogs" + `
     <ul>
       <li><a href="http://hubpages.com/technology/tictactoe" target="_blank">Developing TicTacToe from scratch in Android</a></li>
+      <li><a href="https://e4example.blogspot.com/2017/07/run-different-version-of-firefox-using.html" target="_blank">Run different version of firefox using python selenium</a></li>
+      <li><a href="https://e4example.blogspot.com/2017/07/run-different-version-of-chrome-using.html" target="_blank">Run different version of chrome using python selenium</a></li>
+      <li><a href="https://e4example.blogspot.com/2017/02/how-to-use-scraping-hub-step-by-step.html" target="_blank">How to use Scraping Hub? (Step-by-Step)</a></li>
+      <li><a href="https://e4example.blogspot.com/2017/02/java-interview-questions-nepal.html" target="_blank">Java interview questions (Nepal)</a></li>
     </ul>
     `
     outputArea.innerHTML = blogs;
