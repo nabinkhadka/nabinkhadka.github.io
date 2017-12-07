@@ -13,7 +13,6 @@ var commands = {
         'socials': getSocialLinks,
         'blogs': blogs,
         'education': getEducations,
-        'desktop': viewDesktopVersion,
         'default': showSyntaxErrorMsg
     };
 
@@ -40,11 +39,6 @@ setInterval(function(){
       inputCommand.focus();
   }
 }, 300);
-
-
-function viewDesktopVersion(){
-  window.open('desktop/', '_blank');
-}
 
 function sendCommand(e) {
     if (e.keyCode == 13) {
@@ -88,8 +82,7 @@ function getEducations(){
 function doHelp() {
 
     var help = `
-      <br><br>Welcome to my website. If you do not want to use the terminal, you can type "desktop" to go to website directly. 
-      But if you want to try out this simple shell, please see the following commands.<br> 
+      <br><br>Welcome to my website. Please see the following commands to use the commandline.<br> 
     `;
 
     outputArea.innerHTML = "<span>nabin@Khadka:~$</span> help" + help + getCommandLists() + getThankYouMsg() + '<br><br>';
@@ -210,7 +203,6 @@ function getCommandLists() {
               <li>blogs</li>
               <li>contact</li>
               <li>clear</li>
-              <li>desktop</li>
               <li>education</li>
               <li>experiences</li>
               <li>help</li>
@@ -221,7 +213,7 @@ function getCommandLists() {
 }
 
 function getThankYouMsg() {
-    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help" or go to desktop version.<br><br>'
+    return 'Thank You!<br>Copyright 2016, Nabin Khadka. For more information, type "help".<br><br>'
 }
 
 function debug(message) {
