@@ -106,6 +106,18 @@ function showProjects() {
       <li><a href="https://github.com/nabinkhadka" target="_blank">Find other projects on github</a><li>
     </ul>`
 
+    +
+
+    `
+    <br>I have used following for development<br>
+    ⚡ For data science: Numpy, Pandas, NLTK
+    ⚡ Flask: Socket, OAuth, MongoDB, mlab, Flask Admin, Sqlalchemy
+    ⚡ Scrapy, Scrapinghub, Crawlera
+    ⚡ Selenium automation
+    ⚡ Android
+    ⚡ JS (Chart with Realtime data)
+    ⚡ Git, Jira, Docker, AWS (EC2 linux, windows server, S3 buckets)
+    `
     ;
 
     outputArea.innerHTML = "<span>nabin@Khadka:~$</span> projects" + projectLists;
