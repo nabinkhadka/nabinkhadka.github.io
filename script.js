@@ -116,7 +116,7 @@ function showProjects() {
     ⚡ Selenium automation<br>
     ⚡ Android<br>
     ⚡ JS (Chart with Realtime data)<br>
-    ⚡ Git, Jira, Docker, AWS (EC2 linux, windows server, S3 buckets)
+    ⚡ Git, Jira, Docker, AWS (EC2 linux, windows server, S3 buckets)<br><br>
     `
     ;
 
