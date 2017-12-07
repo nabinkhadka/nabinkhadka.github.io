@@ -109,13 +109,13 @@ function showProjects() {
     +
 
     `
-    <br>I have used following for development<br>
-    ⚡ For data science: Numpy, Pandas, NLTK
-    ⚡ Flask: Socket, OAuth, MongoDB, mlab, Flask Admin, Sqlalchemy
-    ⚡ Scrapy, Scrapinghub, Crawlera
-    ⚡ Selenium automation
-    ⚡ Android
-    ⚡ JS (Chart with Realtime data)
+    <br>I have used following for development purposes<br>
+    ⚡ For data science: Numpy, Pandas, NLTK<br>
+    ⚡ Flask: Socket, OAuth, MongoDB, mlab, Flask Admin, Sqlalchemy<br>
+    ⚡ Scrapy, Scrapinghub, Crawlera<br>
+    ⚡ Selenium automation<br>
+    ⚡ Android<br>
+    ⚡ JS (Chart with Realtime data)<br>
     ⚡ Git, Jira, Docker, AWS (EC2 linux, windows server, S3 buckets)
     `
     ;
