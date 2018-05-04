@@ -200,8 +200,9 @@ function showSyntaxErrorMsg() {
 }
 
 function showArchivesPage(){
-  var archivePageHtml = "<span>nabin@Khadka:~$</span>";
-  archivePageHtml = '1. <a href="encoded_files"> Download sample files with various encodings</a><br>Note: sample_file_before_encoding.csv is the initial stage of the file. Others are after encoding is done';
+  var archivePageHtml = "<span>nabin@Khadka:~$</span>",
+      link = 'https://github.com/nabinkhadka/nabinkhadka.github.io/tree/master/encoded_files';
+  archivePageHtml = '1. <a href="' + link + '"> Download sample files with various encodings</a><br>Note: sample_file_before_encoding.csv is the initial stage of the file. Others are after encoding is done';
   outputArea.innerHTML = archivePageHtml + '<br><br>';
 }
 
