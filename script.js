@@ -13,7 +13,8 @@ var commands = {
         'socials': getSocialLinks,
         'blogs': blogs,
         'education': getEducations,
-        'default': showSyntaxErrorMsg
+        'default': showSyntaxErrorMsg,
+        'archives': showArchivesPage
     };
 
 setInterval(function(){
@@ -198,8 +199,13 @@ function showSyntaxErrorMsg() {
 
 }
 
-function version() {
+function showArchivesPage(){
+  var archivePageHtml = "<span>nabin@Khadka:~$</span>";
+  archivePageHtml = '1. <a href="encoded_files"> Download sample files with various encodings</a><br>Note: sample_file_before_encoding.csv is the initial stage of the file. Others are after encoding is done';
+  outputArea.innerHTML = archivePageHtml + '<br><br>';
+}
 
+function version() {
     var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.1 <br>Current update on: 6th Nov. 2016.<br> 6th Nov. 2016.<br><br>';
     outputArea.innerHTML = version;
 
@@ -221,6 +227,7 @@ function getCommandLists() {
               <li>projects</li>
               <li>socials</li>
               <li>version</li>
+              <li>archives</li>
             </ul>`;
 }
 
