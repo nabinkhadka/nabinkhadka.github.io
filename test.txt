@@ -1,9 +1,0 @@
-{
-  "explanations": [
-    {
-      "type": "logPointQuery",
-      "query": "user=ADEN event_id=4725 log_ts>='1974/10/24 21:35:00' log_ts<'1974/10/25 21:35:00'",
-      "text": "Optionalfieldwithatextexplantationwithcommentontheanomalythatisrevealedbythequery"
-    }
-  ]
-}
