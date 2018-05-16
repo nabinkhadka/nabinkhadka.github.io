@@ -1,28 +1,10 @@
-{
-  "explanations": [
-    {
-      "text": "string",
-      "type": "logPointQuery",
-      "query": "null",
-      "chartType": "barPlot",
-      "chartData": {
-        "history": [
-          {
-            "x": 1517443200,
-            "y": [
-              1,
-              2,
-              3
-            ]
-          }
-        ],
-        "current": [
-          {
-            "x": 1517443200,
-            "y": 0
-          }
-        ]
-      }
-    }
-  ]
-}
+{"explanations": [
+
+{ "type": "logPointQuery",
+
+"query": "user=ADEN event_id=4725 log_ts>='1974/10/24 21:35:00' log_ts<'1974/10/25 21:35:00'”,
+
+"text": “Optional field with a  text explantation with comment on the anomaly that is revealed by the query”}
+
+]}
+
