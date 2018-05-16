@@ -1,0 +1,28 @@
+{
+  "explanations": [
+    {
+      "text": "string",
+      "type": "logPointQuery",
+      "query": "null",
+      "chartType": "barPlot",
+      "chartData": {
+        "history": [
+          {
+            "x": 1517443200,
+            "y": [
+              1,
+              2,
+              3
+            ]
+          }
+        ],
+        "current": [
+          {
+            "x": 1517443200,
+            "y": 0
+          }
+        ]
+      }
+    }
+  ]
+}
