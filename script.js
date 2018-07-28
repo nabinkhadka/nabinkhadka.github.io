@@ -208,7 +208,7 @@ function showArchivesPage(){
 }
 
 function version() {
-    var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.2 <br>Current update on: 6th Nov. 2016.<br> 6th Nov. 2016.<br><br>';
+    var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.2 <br>Current update on: 28th July 2018';
     outputArea.innerHTML = version;
 
 }
