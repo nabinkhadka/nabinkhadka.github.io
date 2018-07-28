@@ -183,7 +183,8 @@ function listExperiences() {
       <ul>
         <li>E & T Nepal, Pvt. Ltd. (Cuda / C / 1 year, 8 months)</li>
         <li>Smart Data Solutions (Java / MySQL / 3 months)</li>
-        <li>Logpoint Nepal Pvt. Ltd. (Associate Software Engineer / Oct, 2016 - Present)</li>
+        <li>Logpoint Nepal Pvt. Ltd. (Associate Software Engineer / Oct, 2016 - Dec 2017)</li>
+        <li>Logpoint Nepal Pvt. Ltd. (Software Engineer / Jan, 2018 - Present)</li>
       </ul>
     `;
 
