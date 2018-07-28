@@ -70,6 +70,7 @@ function getEducations(){
   var education = "<span>nabin@Khadka:~$</span> education" + `
       <br><br>
       <ul>
+        <li>Master of Science (M.Sc) in Computer System and Knowledge Engineering - Tribhuvan University ( Running )</li>
         <li>Bachelors of Computer Engineering, Kathmandu Engineering College ( 74 % )</li>
         <li>10 + 2 (Science, HSEB, 78 % )</li>
         <li>SLC, Mount View English Boarding School, Dang ( 86 % )</li>
