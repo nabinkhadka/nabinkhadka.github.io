@@ -159,7 +159,6 @@ function getSocialLinks(){
   <ul>
     <li><a href="http://stackoverflow.com/users/2770850/nabin-khadka" target="_blank">Stackoverflow</a></li>
     <li><a href="https://www.linkedin.com/in/nabin-khadka-76946689" target="_blank">LinkedIn</a></li>
-    <li><a href="http://hubpages.com/@nabinkhadka" target="_blank">Blogs</a></li>
     <li><a href="https://twitter.com/nbnkhadka" target="_blank">Twitter</a></li>
     <li><a href="https://github.com/nabinkhadka" target="_blank">Github</a></li>
   </ul>`
