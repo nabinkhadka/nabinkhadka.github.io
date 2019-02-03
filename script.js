@@ -95,7 +95,7 @@ function showProjects() {
     var projectLists = `<br><br>Android:<br>
     <ul>
       <li><a href="https://play.google.com/store/apps/details?id=np.com.picl.anjalacorab" target="_blank">ACORAB CIN</a><li>
-      <li><a href="https://play.google.com/store/apps/details?id=com.premier.mtcl1" target="_blank">Premier Insurance Co. Ltd. Nepal.</a><li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.premier.mtclnepal" target="_blank">Premier Insurance Co. Ltd. Nepal.</a><li>
       <li><a href="https://www.youtube.com/watch?v=YeJJPoHBoHA" target="_blank">Personal Notes Keeping App</a><li>
       <li><a href="https://www.youtube.com/watch?v=M2LvmD4Syrs&feature=youtu.be" target="_blank">Company App</a><li>
     </ul>`
