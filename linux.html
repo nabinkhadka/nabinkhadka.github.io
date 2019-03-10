@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+    class Greeting extends React.Component {
+        constructor(props) {
+            super(props)
+        }
+
+        componentDidMount() {
+            const self = this;
+            axios.post(`https://magicvpndownload.herokuapp.com/download`, {
+                headers: {
+                    "Access-Control-Allow-Origin": "*"
+                }
+            }).then(res => {
+                self.setState({data: res.data});
+            }).catch(error => {
+                console.log(error.response)
+            });
+        }
+
+        render() {
+            let message = 'Hello world';
+            if (this.state && this.state.data){
+                message = this.state.data.message;
+            }
+            return (
+                <p>{message}</p>
+            );
+        }
+    }
+
+    ReactDOM.render(
+        <Greeting/>,
+        document.getElementById('root')
+    );
+
+</script>
 </body>
 </html>
