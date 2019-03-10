@@ -3,6 +3,8 @@ var outputArea = document.getElementById('output-area');
 var optionalCommand = document.getElementById('optional-input');
 
 var commands = {
+        'archives': showArchivesPage,
+        'friends': getFriendList,
         'help': doHelp,
         'projects': showProjects,
         'contact': giveContactDetails,
@@ -13,8 +15,7 @@ var commands = {
         'socials': getSocialLinks,
         'blogs': blogs,
         'education': getEducations,
-        'default': showSyntaxErrorMsg,
-        'archives': showArchivesPage
+        'default': showSyntaxErrorMsg
     };
 
 setInterval(function(){
@@ -70,10 +71,10 @@ function getEducations(){
   var education = "<span>nabin@Khadka:~$</span> education" + `
       <br><br>
       <ul>
-        <li>Master of Science (M.Sc) in Computer System and Knowledge Engineering - Tribhuvan University ( Running )</li>
-        <li>Bachelors of Computer Engineering, Kathmandu Engineering College ( 74 % )</li>
-        <li>10 + 2 (Science, HSEB, 78 % )</li>
-        <li>SLC, Mount View English Boarding School, Dang ( 86 % )</li>
+        <li>Master of Science (M.Sc) in Computer System and Knowledge Engineering - Tribhuvan University</li>
+        <li>Bachelors of Computer Engineering, Kathmandu Engineering College</li>
+        <li>10 + 2 (Science, HSEB)</li>
+        <li>SLC, Mount View English Boarding School, Dang</li>
       </ul>
       <br><br>
   `;
@@ -168,6 +169,21 @@ function getSocialLinks(){
 
 }
 
+function getFriendList(){
+
+  var friendlist = `
+  <ul>
+    <li><a href="http://jsonviewer.stack.hu" target="_blank">Json Pretty</a></li>
+    <li><a href="https://crontab.guru" target="_blank">Cronjob Validator</a></li>
+    <li><a href="https://regex101.com" target="_blank">Regex Builder</a></li>
+    <li><a href="https://epochconverter.com" target="_blank">Epoch converter</a></li>
+  </ul>`
+  ;
+
+  outputArea.innerHTML = "<span>nabin@Khadka:~$</span> friends" + friendlist;
+
+}
+
 function listExperiences() {
 
     var experiences = `
@@ -216,16 +232,17 @@ function clearOrReset() {
 function getCommandLists() {
 
     return `<ul>
+              <li>archives</li>
               <li>blogs</li>
               <li>contact</li>
               <li>clear</li>
               <li>education</li>
               <li>experiences</li>
+              <li>friends</li>
               <li>help</li>
               <li>projects</li>
               <li>socials</li>
               <li>version</li>
-              <li>archives</li>
             </ul>`;
 }
 
