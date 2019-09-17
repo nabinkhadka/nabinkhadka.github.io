@@ -7,6 +7,7 @@ var commands = {
         'friends': getFriendList,
         'help': doHelp,
         'projects': showProjects,
+        'softwares': showSoftwares,
         'contact': giveContactDetails,
         'experiences': listExperiences,
         'clear': clearOrReset,
@@ -89,6 +90,11 @@ function doHelp() {
     `;
 
     outputArea.innerHTML = "<span>nabin@Khadka:~$</span> help" + help + getCommandLists() + getThankYouMsg() + '<br><br>';
+}
+
+function showSoftwares() {
+    var win = window.open('/downloads', '_blank');
+    win.focus();
 }
 
 function showProjects() {
@@ -242,6 +248,7 @@ function getCommandLists() {
               <li>help</li>
               <li>projects</li>
               <li>socials</li>
+              <li>softwares</li>
               <li>version</li>
             </ul>`;
 }
