@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Counter</title>
+</head>
+<body>
+    <h2></h2>
+    <script type="text/javascript">
+        today=new Date();
+        var cmas=new Date(2020, 0, 5);
+        var one_day=1000*60*60*24;
+        var days = Math.ceil((cmas.getTime()-today.getTime())/(one_day));
+        document.getElementsByTagName('H2')[0].innerHTML= days + ' days remaining';
+    </script>
+</body>
+</html>
