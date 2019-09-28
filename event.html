@@ -4,15 +4,15 @@
     <title>Event Counter</title>
 </head>
 <body>
-    <div style="width:800px; margin:0 auto;">
-        centered content
-    </div>
+    <h1 style="display: flex;align-items: center; justify-content: center;margin-top: 20%;">
+        
+    </h1>
     <script type="text/javascript">
         today=new Date();
         var cmas=new Date(2020, 0, 5);
         var one_day=1000*60*60*24;
         var days = Math.ceil((cmas.getTime()-today.getTime())/(one_day));
-        document.getElementsByTagName('H2')[0].innerHTML= days + ' days remaining';
+        document.getElementsByTagName('H1')[0].innerHTML= days + ' !!';
     </script>
 </body>
 </html>
