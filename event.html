@@ -12,10 +12,10 @@
 <body>
     <h1 style="display: flex;align-items: center; justify-content: center;margin-top: 10%;font-family: 'Butterfly Kids', cursive;  font-size: 2500%;">  </h1>
     <script type="text/javascript">
-        today=new Date();
-        var cmas=new Date(2019, 11, 29);
-        var one_day=1000*60*60*24;
-        var days = -1*Math.ceil((cmas.getTime()-today.getTime())/(one_day));
+        var today=new Date(),
+            cmas=new Date(2019, 11, 29),
+            oneDay=1000 * 60 * 60 * 24;
+        var days = -1 * Math.ceil((cmas.getTime() - today.getTime())/oneDay) + 1;
         document.getElementsByTagName('H1')[0].innerHTML= days + ' !!';
     </script>
 </body>
