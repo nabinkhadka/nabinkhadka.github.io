@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+<title>Simple web page</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #92a8d1;
+  height: 750px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Programming</h2>
+  <h1>WAP to print first 100 odd number</h1>
+</header>
+</header>
+
+<section>
+  <nav>
+   <text>sample c code</text>
+   <li>
+   <text>Program to print first 100 odd  number</text></li>
+   <li>
+   <text><a href=file:///home/rabin/Desktop/trying.htm>Program to print first 100 even number </a></text>
+  </li>
+  </nav>
+  
+  <article>
+   <text>
+ <pre class='brush: cpp'>
+ 
+   	
+   #include < stdio.h > 
+
+int main()
+{
+    printf("\n\n\t\tStudytonight - Best place to learn\n\n\n");
+    int n,i = 3, count, c;
+
+    printf("\nEnter the number of prime numbers required :  ");
+    scanf("%d", &n);
+
+    if(n >= 1)
+    {
+        printf("\n\nFirst %d prime numbers are :  ", n);
+        printf("2 ");
+    }
+
+    // iteration for n prime numbers
+    // i is the number to be checked in each iteration starting from 3
+    for(count = 2; count <= n; i++)  
+    {
+        // iteration to check c is prime or not
+        for(c = 2; c < i; c++)
+        {
+            if(i%c == 0)
+                break;
+        }
+
+        if(c == i)  // c is prime
+        {
+            printf("%d ", i);
+            count++;    // increment the count of prime numbers
+        }
+
+    }
+    printf("\n\n\n\n\t\t\tCoding is Fun !\n\n\n");
+    return 0;
+
+      }
+
+  </stdio.h>
+    </pre>
+    <a href=file:///home/rabin/Desktop/trying.htm>link text</a>
+
+</text>
+  </article>
+</section>
+
+
+
+</body>
+</html>

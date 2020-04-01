@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+<title>Trying</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #92a8d1;
+  height: 750px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Programming</h2>
+  <h1>WAP to print first even number</h1>
+  
+
+</header>
+</header>
+
+<section>
+  <nav>
+   <text>sample c code</text>
+   <li>
+   <text>Program to print first 100 even number</text>
+      <li>
+   <text><a href=file:///home/rabin/Desktop/try.htm>Program to print first 100 odd number </a></text></li>
+  </li>
+  </nav>
+  
+  <article>
+   <text>
+ <pre class='brush: cpp'>
+ 
+ #include <stdio.h>  
+   
+int main() {  
+    int counter; 
+    printf("Even numbers between 1 to 100\n");  
+    /* 
+     * Initialize counter with 1, and increment it in every iteration.
+     * For every value of counter check whether it is even number or
+     * not and print it accordingly 
+     */ 
+    for(counter = 1; counter <= 100; counter++) {  
+        /* Even numbers are divisible by 2 */ 
+        if(counter%2 == 0) { 
+            /* counter is even, print it */
+            printf("%d ", counter);  
+        }  
+    }  
+   
+    return 0;  
+} 
+      }
+  </stdio.h>
+    </pre>
+</text>
+
+  </article>
+</section>
+
+
+
+</body>
+</html>
