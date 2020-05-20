@@ -1,7 +1,6 @@
 var inputCommand = document.getElementById('input-command');
 var outputArea = document.getElementById('output-area');
 var optionalCommand = document.getElementById('optional-input');
-
 var commands = {
         'archives': showArchivesPage,
         'friends': getFriendList,
@@ -252,6 +251,7 @@ function getCommandLists() {
               <li>experiences</li>
               <li>friends</li>
               <li>help</li>
+              <li>notes</li>
               <li>projects</li>
               <li>socials</li>
               <li>softwares</li>
