@@ -5,6 +5,7 @@ var optionalCommand = document.getElementById('optional-input');
 var commands = {
         'archives': showArchivesPage,
         'friends': getFriendList,
+        'notes': showNotes,
         'help': doHelp,
         'projects': showProjects,
         'softwares': showSoftwares,
@@ -94,6 +95,11 @@ function doHelp() {
 
 function showSoftwares() {
     var win = window.open('/downloads', '_blank');
+    win.focus();
+}
+
+function showNotes() {
+    var win = window.open('/notes', '_blank');
     win.focus();
 }
 
