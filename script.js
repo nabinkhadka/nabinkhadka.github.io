@@ -5,6 +5,7 @@ var commands = {
         'archives': showArchivesPage,
         'friends': getFriendList,
         'notes': showNotes,
+        'pip': showPips,
         'help': doHelp,
         'projects': showProjects,
         'softwares': showSoftwares,
@@ -99,6 +100,11 @@ function showSoftwares() {
 
 function showNotes() {
     var win = window.open('/notes', '_blank');
+    win.focus();
+}
+
+function showPips() {
+    var win = window.open('/pip', '_blank');
     win.focus();
 }
 
@@ -207,7 +213,8 @@ function listExperiences() {
       <ul>
         <li>E & T Nepal, Pvt. Ltd. (Cuda / C / 1 year, 8 months)</li>
         <li>Smart Data Solutions (Java / MySQL / 3 months)</li>
-        <li>Logpoint Nepal Pvt. Ltd. (Software Engineer / Oct, 2016 - Present)</li>
+        <li>Logpoint Nepal Pvt. Ltd. (Software Engineer / Oct, 2016 - March, 2020)</li>
+        <li>Upwork Freelance (Software Engineer/Python Developer/ March, 2014 - Present</li>
       </ul>
     `;
 
@@ -231,7 +238,7 @@ function showArchivesPage(){
 }
 
 function version() {
-    var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.4 <br>Current update on: 6th Jan 2020';
+    var version = "<span>nabin@Khadka:~$</span> version" + '<br><br>0.5 <br>Current update on: 6th Jan 2020';
     outputArea.innerHTML = version;
 
 }
@@ -252,6 +259,7 @@ function getCommandLists() {
               <li>friends</li>
               <li>help</li>
               <li>notes</li>
+              <li>pip</li>
               <li>projects</li>
               <li>socials</li>
               <li>softwares</li>
